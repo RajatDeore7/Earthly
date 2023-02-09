@@ -249,7 +249,7 @@
         let $window = $(window),
             $body = $('body'),
             $section = $('.section');
-        let scroll = $window.scrollTop() + ($window.height() / 4);
+        let scroll = $window.scrollTop() + ($window.height() / 5);
         console.log($window.height())
         $section.each(function () {
             if ($(this).position().top <= scroll && $(this).position().top + $(this).height() > scroll) {
@@ -259,7 +259,7 @@
                 $('.section').removeClass('active');
                 $(this).addClass('active');
             }
-            if ($window.scrollTop() <= 1190 || $window.scrollTop() >= 4400) {
+            if ($window.scrollTop() <= 1500 || $window.scrollTop() >= 4500) {
                 $('.section').removeClass('active');
             }
         });
