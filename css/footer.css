@@ -1,0 +1,52 @@
+.footer {
+    background-color: black;
+    height: 10vw;
+    margin-top: 8rem;
+}
+
+.rev_main {
+    padding: 4rem;
+    margin: 5rem 10rem;
+    width: 70%;
+    border: 1px solid;
+    border-radius: 7%;
+}
+
+input.rev_input {
+    width: 100%;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.rev_2 {
+    border-bottom: 1px solid;
+}
+
+.rev_3 {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: end;
+}
+
+.form-submit-button {
+    background: #5BC0F8;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+    padding: 0.7rem;
+}
+
+.form-submit-button:hover {
+    background: #016ABC;
+    color: #fff;
+    border: 1px solid #eee;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #eee;
+    text-shadow: none;
+}
+
+p.subm {
+    font-size: 1rem;
+}

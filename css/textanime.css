@@ -1,0 +1,24 @@
+.four .type {
+    width: auto;
+    margin: auto;
+}
+
+.four h3 {
+    width: 95%;
+    border-right: 4px solid black;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+}
+
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}

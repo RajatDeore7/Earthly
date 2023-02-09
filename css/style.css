@@ -1,0 +1,260 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url("../assests/ead566_a12b3feb70ae46139eee97c99f6ecebf_mv2.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav_main {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+p#para_1 {
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+p#para {
+    color: #FFFFFF;
+    padding: 0;
+    margin: 0;
+    font-size: 1vw;
+}
+
+#para_2 {
+    text-decoration: none;
+    font-size: 1.1vw;
+    color: #FFFFFF;
+}
+
+.nav_text2 {
+    width: 17rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p_name {
+    position: absolute;
+    max-width: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+}
+
+
+a.nav_border {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+a.nav_border:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 0.1rem;
+    bottom: 0;
+    left: 0;
+    background-color: #bbe1fa;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+a.nav_border:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../assests/Untitleddesign.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h1 {
+    font-size: 3rem;
+    margin: 20px;
+}
+
+section .text-container {
+    display: flex;
+}
+
+section .text-container .text-box {
+    /* margin: 20px; */
+    padding: 50px 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.text-box-1 {
+    margin: 20px;
+    padding: 20px;
+    width: 100%;
+    border-right: 1px solid #FFFFFF;
+    color: #FFFFFF;
+}
+
+.reveal {
+    position: relative;
+    opacity: 0;
+    display: flex;
+    margin-top: 5rem;
+    /* padding-top: 5rem; */
+    border: 1px solid #FFFFFF;
+    border-radius: 5%;
+    z-index: 1;
+}
+
+.reveal.active {
+    opacity: 1;
+}
+
+.active.fade-bottom {
+    animation: fade-bottom 1s ease-in;
+}
+
+@keyframes fade-bottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+p.price {
+    font-family: sans-serif;
+    font-size: 2vw;
+    padding-bottom: 1vw;
+    color: #FFFFFF;
+}
+
+p.quant {
+    font-family: sans-serif;
+    font-size: 1.2vw;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+#quantity {
+    width: 70%;
+    height: 2vw;
+    color: #FFFFFF;
+
+}
+
+.button {
+    background-color: #5BC0F8;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    border-radius: 5%;
+    transition-duration: 0.4s;
+}
+
+.button1 {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.button2 {
+    background-color: #4CAF50;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+li {
+    padding: 0.5vw;
+}
+
+div.foot {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+div.icons {
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.bot {
+    position: fixed;
+    top: 80%;
+    left: 93%;
+    z-index: 1;
+}
+
+img.move {
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
